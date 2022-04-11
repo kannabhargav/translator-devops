@@ -25,11 +25,7 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext:
-  runAsUser: 1001
-  fsGroup: 2000
-  runAsGroup: 3000
-  # fsGroup: 2000
+podSecurityContext: {}
 
 securityContext: {}
 
@@ -42,8 +38,8 @@ securityContext: {}
 
 x_trapi:
   server:
-    location: RENCI
-    maturity: development
+    location: "location"
+    maturity: "maturity"
 
 service:
   type: ClusterIP
